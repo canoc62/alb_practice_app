@@ -58,7 +58,7 @@ func main() {
 	}
 
 	healthServer := &http.Server{
-		Addr:         ":8080",
+		Addr:         ":8081",
 		Handler:      healthRouter(),
 		ReadTimeout:  5 * time.Second,
 		WriteTimeout: 10 * time.Second,
