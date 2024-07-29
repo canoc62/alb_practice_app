@@ -51,7 +51,7 @@ func healthRouter() http.Handler {
 
 func main() {
 	mainServer := &http.Server{
-		Addr:         ":8080",
+		Addr:         ":80",
 		Handler:      mainRouter(),
 		ReadTimeout:  5 * time.Second,
 		WriteTimeout: 10 * time.Second,
